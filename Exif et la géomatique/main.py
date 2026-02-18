@@ -1,3 +1,5 @@
+#Martin Couture
+#Vidéo explicative: https://youtu.be/-FxLmck7uRw
 import exif, webbrowser
 
 def dmsTodd(coord, coorfRef):
