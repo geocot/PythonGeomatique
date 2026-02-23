@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_a6a2d1f913c48c9929798bc4e91c00d3 {
+                #map_07d03ab4663d751ffa901065ceacae41 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,19 +54,19 @@
 <body>
     
     
-            <div class="folium-map" id="map_a6a2d1f913c48c9929798bc4e91c00d3" ></div>
+            <div class="folium-map" id="map_07d03ab4663d751ffa901065ceacae41" ></div>
         
 </body>
 <script>
     
     
-            var map_a6a2d1f913c48c9929798bc4e91c00d3 = L.map(
-                "map_a6a2d1f913c48c9929798bc4e91c00d3",
+            var map_07d03ab4663d751ffa901065ceacae41 = L.map(
+                "map_07d03ab4663d751ffa901065ceacae41",
                 {
-                    center: [64.14566729972223, -21.940232],
+                    center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
                     ...{
-  "zoom": 10,
+  "zoom": 1,
   "zoomControl": true,
   "preferCanvas": false,
 }
@@ -78,7 +78,7 @@
 
         
     
-            var tile_layer_a3e85904a85fed18e659bf6080300fc2 = L.tileLayer(
+            var tile_layer_01a74a601606ed26314efaeed44cf3ff = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,17 +95,17 @@
             );
         
     
-            tile_layer_a3e85904a85fed18e659bf6080300fc2.addTo(map_a6a2d1f913c48c9929798bc4e91c00d3);
+            tile_layer_01a74a601606ed26314efaeed44cf3ff.addTo(map_07d03ab4663d751ffa901065ceacae41);
         
     
-            var marker_f6b07bf97fab368d8af44a2b8e193b1e = L.marker(
+            var marker_4fb38722fd37c426dc7427b66542139c = L.marker(
                 [64.14566729972223, -21.940232],
                 {
 }
-            ).addTo(map_a6a2d1f913c48c9929798bc4e91c00d3);
+            ).addTo(map_07d03ab4663d751ffa901065ceacae41);
         
     
-            var icon_02d05bae467b2eb3eeef102eb3c021e3 = L.AwesomeMarkers.icon(
+            var icon_6df9c1df95423d9742f4a3224a94974a = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -116,34 +116,138 @@
             );
         
     
-        var popup_caf091ff81acbec29df3772a1fc1e9b5 = L.popup({
+        var popup_bdc80c6c701a61c2444a80a7a8ae952f = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_28f04c8f2fb85775adc1993acc61c652 = $(`<div id="html_28f04c8f2fb85775adc1993acc61c652" style="width: 100.0%; height: 100.0%;"><a href="Photo.jpg" target="_blank">Lien</a></div>`)[0];
-                popup_caf091ff81acbec29df3772a1fc1e9b5.setContent(html_28f04c8f2fb85775adc1993acc61c652);
+                var html_3904b1adfa40fa832e5152141550d7bd = $(`<div id="html_3904b1adfa40fa832e5152141550d7bd" style="width: 100.0%; height: 100.0%;"><a href="photo.jpg" target="_blank">Lac Reykjavik</a></div>`)[0];
+                popup_bdc80c6c701a61c2444a80a7a8ae952f.setContent(html_3904b1adfa40fa832e5152141550d7bd);
             
         
 
-        marker_f6b07bf97fab368d8af44a2b8e193b1e.bindPopup(popup_caf091ff81acbec29df3772a1fc1e9b5)
+        marker_4fb38722fd37c426dc7427b66542139c.bindPopup(popup_bdc80c6c701a61c2444a80a7a8ae952f)
         ;
 
         
     
     
-            marker_f6b07bf97fab368d8af44a2b8e193b1e.bindTooltip(
-                `<div>
-                     <b>Photo</b>
-                 </div>`,
+                marker_4fb38722fd37c426dc7427b66542139c.setIcon(icon_6df9c1df95423d9742f4a3224a94974a);
+            
+    
+            var marker_9247856f307da2dfb6980bc1056ba949 = L.marker(
+                [64.06925909444445, -16.184221383333334],
                 {
-  "sticky": true,
+}
+            ).addTo(map_07d03ab4663d751ffa901065ceacae41);
+        
+    
+            var icon_1b5f9d573b5532788c6bdc593f414059 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
 }
             );
         
     
-                marker_f6b07bf97fab368d8af44a2b8e193b1e.setIcon(icon_02d05bae467b2eb3eeef102eb3c021e3);
+        var popup_be7c39602a84e3c1db2b761f4b303d84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ffd5459104238abaa75de374e453a7f = $(`<div id="html_6ffd5459104238abaa75de374e453a7f" style="width: 100.0%; height: 100.0%;"><a href="photo2.jpg" target="_blank">Jokulsarlon</a></div>`)[0];
+                popup_be7c39602a84e3c1db2b761f4b303d84.setContent(html_6ffd5459104238abaa75de374e453a7f);
+            
+        
+
+        marker_9247856f307da2dfb6980bc1056ba949.bindPopup(popup_be7c39602a84e3c1db2b761f4b303d84)
+        ;
+
+        
+    
+    
+                marker_9247856f307da2dfb6980bc1056ba949.setIcon(icon_1b5f9d573b5532788c6bdc593f414059);
+            
+    
+            var marker_1740e11ca49089404fc9ac7411566f3c = L.marker(
+                [64.14752337777779, -21.922327219444444],
+                {
+}
+            ).addTo(map_07d03ab4663d751ffa901065ceacae41);
+        
+    
+            var icon_afbfc54d82442390617b96315267c680 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6b4c3a2dcafe095bdd0a5e84a477e67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1262f7de80e3ffb62bfbe30b22288a0e = $(`<div id="html_1262f7de80e3ffb62bfbe30b22288a0e" style="width: 100.0%; height: 100.0%;"><a href="photo3.jpg" target="_blank">Art Reykjavik</a></div>`)[0];
+                popup_c6b4c3a2dcafe095bdd0a5e84a477e67.setContent(html_1262f7de80e3ffb62bfbe30b22288a0e);
+            
+        
+
+        marker_1740e11ca49089404fc9ac7411566f3c.bindPopup(popup_c6b4c3a2dcafe095bdd0a5e84a477e67)
+        ;
+
+        
+    
+    
+                marker_1740e11ca49089404fc9ac7411566f3c.setIcon(icon_afbfc54d82442390617b96315267c680);
+            
+    
+            var marker_7d446748dad7dd4cf31fe94db7ac4c3e = L.marker(
+                [63.41453469444444, -19.01057207222222],
+                {
+}
+            ).addTo(map_07d03ab4663d751ffa901065ceacae41);
+        
+    
+            var icon_fa7ad37d579358932b027f8d6fa72784 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4504e5bbf4fcfe4493cac1bd31c72726 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fe74996efe9319f4e538d05e673c851 = $(`<div id="html_8fe74996efe9319f4e538d05e673c851" style="width: 100.0%; height: 100.0%;"><a href="photo4.jpg" target="_blank">Coucher de soleil</a></div>`)[0];
+                popup_4504e5bbf4fcfe4493cac1bd31c72726.setContent(html_8fe74996efe9319f4e538d05e673c851);
+            
+        
+
+        marker_7d446748dad7dd4cf31fe94db7ac4c3e.bindPopup(popup_4504e5bbf4fcfe4493cac1bd31c72726)
+        ;
+
+        
+    
+    
+                marker_7d446748dad7dd4cf31fe94db7ac4c3e.setIcon(icon_fa7ad37d579358932b027f8d6fa72784);
             
 </script>
 </html>
