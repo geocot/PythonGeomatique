@@ -1,5 +1,5 @@
 #Martin Couture
-#Vidéo explicative:
+
 import exif, folium, os
 
 def dmsTodd(coord, coorfRef):
@@ -17,15 +17,14 @@ def lectureDonneesPhoto(pathPhoto):
         coordLong = dmsTodd(dataPhoto.gps_longitude, dataPhoto.gps_longitude_ref)
     return titre, coordLat, coordLong
 
-
-
-# Démarrage de folium
+#Démarrage de folium
 m = folium.Map()
-listePhoto = os.listdir(os.curdir)
-for photo in listePhoto:
+listePhotos = os.listdir(os.curdir)
+for photo in listePhotos:
     if photo.endswith(".jpg"):
-       titre,coordLat,coordLong = lectureDonneesPhoto(photo)
-       folium.Marker(location=(coordLat, coordLong),popup='<a href="'+ photo + '" target="_blank">'+titre+'</a>',icon=folium.Icon(color='green')).add_to(m)
+        titre, coordLat, coordLong = lectureDonneesPhoto(photo)
+        folium.Marker(location=[coordLat, coordLong], popup='<a href="' + photo + '" target="_blank">' + titre + '</a>', icon=folium.Icon(color='green')).add_to(m)
 m.save("index.html")
+
 
 
